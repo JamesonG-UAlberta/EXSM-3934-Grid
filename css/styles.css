@@ -42,7 +42,37 @@ div {
     grid-column: 1 / span 3;
 }
 
+/* ^^^ Mobile ^^^ */
+/* vvv Tablet vvv */
 @media (min-width: 600px)
+{
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 2fr) 1fr;
+    }
+    .green {
+        grid-column: 1 / span 2;
+    }
+    .red {
+        grid-column: 1 / span 2;
+    }
+    .blue {
+        grid-column: 1 / span 2;
+    }
+    .yellow {
+        grid-column: 1 / 2;
+    }
+    .purple {
+        grid-column: 2 / 3;
+    }
+    .orange {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* ^^^ Tablet ^^^ */
+/* vvv Desktop vvv */
+@media (min-width: 1400px)
 {
     .grid{
         grid-template-columns: 2fr 4fr 2fr;
